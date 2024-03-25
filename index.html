@@ -2,72 +2,58 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Website Title</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-
-        header {
-            background-color: #3498db;
-            color: #fff;
-            text-align: center;
-            padding: 1em;
-        }
-
-        nav {
-            background-color: #2c3e50;
-            color: #ecf0f1;
-            text-align: center;
-            padding: 0.5em;
-        }
-
-        nav a {
-            color: #ecf0f1;
-            text-decoration: none;
-            padding: 1em;
-        }
-
-        section {
-            padding: 2em;
-        }
-
-        footer {
-            background-color: #34495e;
-            color: #ecf0f1;
-            text-align: center;
-            padding: 1em;
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <title>Art by KATERINAMASTORI</title>
 </head>
 <body>
-
-    <header>
-        <h1>KATERINAMASTORI.COM</h1>
-    </header>
-
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
-    </nav>
-
-    <section>
-        <h2>Welcome to katerinamastori site!</h2>
-        <p>still ongoing work</p>
-    </section>
-
-    <footer>
-        &copy; 2023 katerinamastori.com. All rights reserved to Katerina Mastori.
-    </footer>
-
+<nav class="container-fluid">
+    <ul><li><strong>Art by Alex</strong></li></ul>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#exhibitions">Exhibitions</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact" role="button">Contact</a></li>
+    </ul>
+</nav>
+<main class="container">
+    <div class="grid">
+        <section>
+            <hgroup>
+                <h2>Welcome to Art by KATERINAMASTORI</h2>
+                <h3>Discover the beauty of expression through color and form</h3>
+            </hgroup>
+            <p>Alex is a contemporary artist known for his vibrant use of color and bold brushstrokes. Explore this website to discover more about his work, upcoming exhibitions, and how you can get in touch.</p>
+            <figure>
+                <img src="https://source.unsplash.com/featured/?abstract,painting" alt="Featured Painting" />
+                <figcaption><a href="#gallery" target="_blank">View Gallery</a></figcaption>
+            </figure>
+            <h3>Upcoming Exhibitions</h3>
+            <p>Stay tuned for information about Alex's upcoming exhibitions and events.</p>
+            <h3>About Alex</h3>
+            <p>Learn more about Alex's journey, his inspiration, and his artistic process.</p>
+        </section>
+    </div>
+</main>
+<section aria-label="Subscribe example">
+    <div class="container">
+        <article>
+            <hgroup>
+                <h2>Contact Alex</h2>
+                <h3>For inquiries or to purchase artwork</h3>
+            </hgroup>
+            <form class="grid">
+                <input type="text" id="firstname" name="firstname" placeholder="Your Name" aria-label="Your Name" required />
+                <input type="email" id="email" name="email" placeholder="Your Email" aria-label="Your Email" required />
+                <button type="submit" onclick="event.preventDefault()">Send Message</button>
+            </form>
+        </article>
+    </div>
+</section>
+<footer class="container">
+    <small><a href="#">Instagram</a> • <a href="#">Facebook</a></small>
+</footer>
 </body>
 </html>
+
