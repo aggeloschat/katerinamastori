@@ -8159,6 +8159,14 @@ textarea.form-control-lg {
   background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
 }
 
+header.header-background{
+  background-image:url("../assets/test1.jpg");
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:cover;
+
+}
+
 .bg-dark {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
